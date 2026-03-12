@@ -2,7 +2,7 @@
 import csv
 
 # Loading function
-def load_data(filepath):
+def load_dataset(filepath):
     data = []
 
     # Open the csv file in dict format
@@ -22,7 +22,7 @@ def load_data(filepath):
 # Testing
 if __name__ == "__main__":
     filepath = "data/Mall_Customers.csv"
-    data = load_data(filepath)
+    data = load_dataset(filepath)
     
     # Print the first 5 rows
     for point in data[:5]:

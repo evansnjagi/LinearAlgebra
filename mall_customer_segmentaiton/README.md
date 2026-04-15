@@ -41,5 +41,5 @@ Extract it using the following command
 unzip archived.zip
 ```
 
-The result output will be `'Mall Customers.xlsx'` file. 
+The result output will be a `'Mall Customers.xlsx'` file. 
 

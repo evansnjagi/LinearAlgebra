@@ -1,6 +1,7 @@
 # Modules
+import numpy as np
 from src.get_data import Getdata
-from src.row_echelon_method import RowEchelon
+from src.row_echelon_method import solver
 
 # Get augmented data
 feature1 = "LotFrontage"
@@ -10,6 +11,11 @@ df = rp.get_dataframe()
 aug_matrix = rp.get_augmented_matrix(feature1, feature2)
 
 # Row echelom method
-rem = RowEchelon().get_row_echelon(aug_matrix)
+A = aug_matrix[2:, :2]
+b = aug_matrix[2:, 2]
 
-print(rem)
+solution = solver(A, b)
+
+print("\n Solution")
+print()
+

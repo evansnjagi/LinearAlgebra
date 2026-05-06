@@ -21,4 +21,16 @@ def mat_vect_mult(A, x):
         steps = []
         
         for j in range(len(x)):
-            product = 
+            product = row[j] * x[j]
+            total += product
+            steps.append(f"{row[j]} * {x[j]}")
+        
+        # Print results output
+        print(f"Row {i + 1}: {' + '.join(steps)} = {total}")
+        result.append(total)
+    
+    print(f"\nInput vector: {x}")
+    print(f"Output vector: {result}")
+    print("Transformation complete.\n")
+
+    return result

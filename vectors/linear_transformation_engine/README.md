@@ -74,4 +74,11 @@ Suppose we have a matrix
 
  Expected output:
 
- ``
+ ```bash
+ Row 1: 2 * 4 + 1 * 5 = 13
+Row 2: 0 * 4 + 3 * 5 = 15
+
+Input vector: [4, 5]
+Output vector: [13, 15]
+Transformation complete.
+```

@@ -82,3 +82,36 @@ Input vector: [4, 5]
 Output vector: [13, 15]
 Transformation complete.
 ```
+
+## Understanding transformation via basis vectors
+
+In 2D the basis vector are: 
+$
+\begin{\bmatrix}
+    1 & 0
+\end{\bmatrix}
+$(represent x-axis direction)
+and 
+$
+\begin{\bmatrix}
+    0 & 1
+\end{\bmatrix}
+$(represent y-axis direction)
+
+First column is the result of transforming the matrix with 
+
+$
+\begin{\bmatrix}
+    1 & 0
+\end{\bmatrix}
+$
+
+and second column 
+
+$
+\begin{\bmatrix}
+    0 & 1
+\end{\bmatrix}
+$.
+
+Therefore, a matrix is fully defined by how it transforms the basis vector.
